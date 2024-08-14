@@ -14,6 +14,8 @@
 
 ## 🔥 News
 
+**[07/2024]** Release learnable head parameter at [this box link](https://buffalo.box.com/s/cnc9oltyerlk1id0xis0hgqrd1fz3clc).
+
 **[06/2024]** Our MCM achieves strong performance (using 4 sampling steps) on the [ChronoMagic-Bench](https://pku-yuangroup.github.io/ChronoMagic-Bench/)! Check out the leaderboard [here](https://huggingface.co/spaces/BestWishYsh/ChronoMagic-Bench).
 
 **[06/2024]** Training code, [pre-trained checkpoint](https://huggingface.co/yhzhai/mcm), [Gradio demo](https://huggingface.co/spaces/yhzhai/mcm), and [Colab demo](https://colab.research.google.com/drive/1ouGbIZA5092hF9ZMHO-AchCr_L3algTL?usp=sharing) release.
@@ -133,6 +135,8 @@ Feel free to try out our MCM!
 ## MCM weights <a name="weight"></a>
 
 We provide our pre-trained checkpoint [here](https://huggingface.co/yhzhai/mcm).
+
+For research/debug purpose, we also provide intermediate parameters and states at [this box link](https://buffalo.box.com/s/cnc9oltyerlk1id0xis0hgqrd1fz3clc). The folder (~1.12GB) include model weight, discriminator weight, scheduler states, optimizer states and learnable head weight.
 
 ## Acknowledgement <a name="ack"></a>
 

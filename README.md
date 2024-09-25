@@ -6,6 +6,8 @@
 
 **<sup>1</sup>State University of New York at Buffalo  &nbsp; | &nbsp;  <sup>2</sup>Microsoft**
 
+**NeurIPS 2024**
+
 **TL;DR**: Our motion consistency model not only accelerates text2video diffusion model sampling process, but also can benefit from an additional high-quality image dataset to improve the frame quality of generated videos.
 
 ![Our motion consistency model not only distill the motion prior from the teacher to accelerate sampling, but also can benefit from an additional high-quality image dataset to improve the frame quality of generated videos.](static/images/illustration.png)
@@ -13,6 +15,8 @@
 <!-- **All training, inference, and evaluation code, as well as model checkpoints will be released in the coming two weeks. Please stay tuned!** -->
 
 ## 🔥 News
+
+**[09/2024]** MCM was accepted to NeurIPS 2024!
 
 **[07/2024]** Release learnable head parameter at [this box link](https://buffalo.box.com/s/cnc9oltyerlk1id0xis0hgqrd1fz3clc).
 

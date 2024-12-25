@@ -21,7 +21,7 @@ def download_dino():
 def download_clip():
     repo = "laion/CLIP-ViT-g-14-laion2B-s34B-b88K"
     file = "open_clip_pytorch_model.bin"
-    hf_hub_download(repo, file)
+    hf_hub_download(repo, file,local_dir="weights")
 
 
 if __name__ == "__main__":

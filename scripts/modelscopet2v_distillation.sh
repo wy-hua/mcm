@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # please set the following variables
-export VIDEO_DATA_PATH=/path/to/video/data
+export VIDEO_DATA_PATH=/content/data_train_partitions_0000.tar.gz
 
-export GPUS=8  # number of GPUs
+export GPUS=0  # number of GPUs
 export MASTER_PORT=29500  # port for distributed training
 export RUN_NAME=modelscopet2v_distillation  # name of the run
 export OUTPUT_DIR=work_dirs/$RUN_NAME  # directory to save the model checkpoints
@@ -22,7 +22,7 @@ accelerate launch --num_machines 1 --num_processes $GPUS \
     --dataloader_num_workers=4 \
     --validation_steps=5000 \
     --checkpointing_steps=500 \
-    --train_batch_size=4 \
+    --train_batch_size=1 \
     --gradient_accumulation_steps=4 \
     --seed=453645634 \
     --enable_xformers_memory_efficient_attention \

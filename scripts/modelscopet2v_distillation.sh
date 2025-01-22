@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # please set the following variables
-export VIDEO_DATA_PATH=/content/data_train_partitions_0000.tar.gz
+export VIDEO_DATA_PATH=/content/mcm/dataset/tars
 
 export GPUS=0  # number of GPUs
 export MASTER_PORT=29500  # port for distributed training

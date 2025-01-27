@@ -226,7 +226,7 @@ def log_validation(
                 output = spatial_head(output)
 
             output = pipeline.decode_latents(output)
-            video = tensor2vid(output, pipeline.image_processor, output_type="np")
+            video = tensor2vid(output, pipeline.video_processor, output_type="np")
             # video should be a tensor of shape (t, h, w, 3), min 0, max 1
             video = video[0]
 

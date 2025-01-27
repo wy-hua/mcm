@@ -52,8 +52,14 @@ def group_by_keys_nothrow(
     lower case (Default value = True)
     """
     current_sample = None
+    non_empty_samples = 0
+    total_samples = 0
     for filesample in data:
         assert isinstance(filesample, dict)
+        total_samples+=1
+        if len(filesample.keys()) ==0:
+            continue
+        non_empty_samples+=1
         fname, value = filesample["fname"], filesample["data"]
         prefix, suffix = keys(fname)
         if prefix is None:
@@ -75,6 +81,7 @@ def group_by_keys_nothrow(
             current_sample[suffix] = value
     if valid_sample(current_sample):
         yield current_sample
+    logger.info(f"Non-empty samples: {non_empty_samples} out of total {total_samples}")
 
 
 def tarfile_to_samples_nothrow(src, handler=wds.warn_and_continue):
